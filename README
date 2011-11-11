@@ -1,0 +1,19 @@
+A batch extractor for .rar files. In a directory with many .rar files, extract
+them all.
+
+usage: anrar [-h] [-d] [-i] [-p PASSWORD] [-v {0,1,2}] [--version]
+
+Extracts all rar files in the current directory
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -d, --delete-files    delete .rar files after succesful extraction (default
+                        is to keep them)
+  -i, --interactive     enables interactive mode, where unrar queries must be
+                        responded to with y/n
+  -p PASSWORD, --password PASSWORD
+                        the password required to extract files
+  -v {0,1,2}, --verbosity {0,1,2}
+                        verbosity of output. 0 for silence, 1 for errors only,
+                        2 for full output
+  --version             show program's version number and exit
